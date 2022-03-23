@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林武彥｜Resume</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="../static/pictures/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles/style.css" />
+
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+<!--  -->
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- <iframe src="./pictures/logov2.svg" frameborder="0"></iframe> -->
+            <!-- <img src="./pictures/logov2.svg" alt="logo" /> -->
+            <h1 class="animated_jello">Resume</h1>
+            <!-- <h1><a href="#">Resume</a></h1> -->
+        </div>
+        <nav class="nimate__animated animate__bounce">
+            <ul>
+                <li class=" nimate__animated animate__bounce"><a href="#">Home</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="animate__backInLeft" class="backimage">
+           
+            <h1 class="slide-left">嗨！我是武彥</h1>
+            <p>為公司提供方案，解決問題，愛才惜才的您不能錯過。</p>
+            <!-- <div><button>往下滑看更多</button></div> -->
+        
+        </section>
+
+        <section class="second">
+            <h1 class="animate__animated animate__bounce">核心能力</h1>
+            <p>總有一個你需要的。</p>
+            <script> 
+                $(document).ready(function(){
+                  $("button").click(function(){
+                    $("div").animate({left:'250px'});
+                  });
+                });
+                </script> 
+            <section class="cards">
+                <div class="card">
+                    <img src="../static/pictures/technology.jpg" alt="tech">
+                    <h4 class="animate__fadeIn">基礎電學</h4>
+                    <p>電子電路，數位邏輯，MCU，VHDL，Layout<br>數位電子丙級證照<br>數位電子乙級證照</p>
+                    <a href="#">瞭解更多</a>
+                </div>
+                <div class="card">
+                    <img src="../static/pictures/coding.jpg" alt="code">
+                    <h4 class="aanimate__fadeIn">Coding</h4>
+                    <p>C，Python，JavaScript，<br>Node.js<br>Linux伺服器架設</p>
+                    <a href="#">瞭解更多</a>
+                </div>
+            </section>
+        </section>
+
+        <section class="third">
+            <h1>Projects</h1>
+            <section class="cards">
+                <div class="card"> <img src="../static/pictures/MCU.png" alt="MCU">
+                    <p>MCU控制</p>
+                </div>
+                <div class="card"><IMG src="../static/pictures/Linux.png" alt="linux" ></IMG>
+                    <p>伺服器架設</p>
+                </div>
+                <div class="card"><IMG src="../static/pictures/Python-Crawler.png.crdownload" alt="py">
+                    <p>Python網路爬蟲應用</p></IMG>
+                </div>
+                <div class="card"><IMG src="../static/pictures/DB.jpg" alt="db">
+                    <p>資料庫SQL MONGO</p></IMG>
+                </div>
+            </section>
+        </section>
+
+
+
+        <section class="fourth">
+            <h1>About Me</h1>
+            <p class="p1">龍華科大電機工程畢業<br>泰山職訓IoT班結訓<br>
+                <p class="pp">“Pay好談，但不給我Job，只好去開Uber了“</p>
+            <p><strong>- 武彥</strong></p><br>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo">
+            <!-- <img src="./pictures/main備用.jpg" alt="logo" /> -->
+            <h1>Contacts</h1>
+        </div>
+        <!-- <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav> -->
+
+        <section class="links">
+            <a href="https://www.facebook.com/wuyen.lin"><img src="../static/pictures/Icons/facebook.svg" alt="FB"></a>
+            <a href="https://www.instagram.com/zerofivem/"><img src="../static/pictures/Icons/instagram.svg" alt="IG"></a>
+            <!-- <a href="#"><img src="./pictures/Icons/twitter.svg" alt="MAIL"></a> -->
+            <a href="https://www.youtube.com/channel/UCVwqJ86lseGQmbJzFF6QyIA/videos"><img src="../static/pictures/Icons/youtube.svg"alt="youtube"></a>
+        </section>
+        
+        <p>©05M   All rights reserved</p>
+    </footer>
+</body>
+
+</html>
