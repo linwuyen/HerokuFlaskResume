@@ -10,21 +10,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="/styles/style.css" />
-</head>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
 <!--  -->
 
 <body>
     <header>
         <div class="logo">
-            <img src="./pictures/logov2.svg" alt="logo" />
-            <h1>Resume</h1>
+            <!-- <iframe src="./pictures/logov2.svg" frameborder="0"></iframe> -->
+            <!-- <img src="./pictures/logov2.svg" alt="logo" /> -->
+            <h1 class="animated_jello">Resume</h1>
             <!-- <h1><a href="#">Resume</a></h1> -->
         </div>
-        <nav>
+        <nav class="nimate__animated animate__bounce">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li class=" nimate__animated animate__bounce"><a href="#">Home</a></li>
                 <li><a href="#">Skill</a></li>
                 <li><a href="#">Project</a></li>
                 <li><a href="#">About Me</a></li>
@@ -34,39 +36,45 @@
     </header>
 
     <main>
-        <section class="backimage">
-            <div class="filter"></div>
-            <h1>嗨！我是武彥</h1>
+        <section id="animate__backInLeft" class="backimage">
+           
+            <h1 class="slide-left">嗨！我是武彥</h1>
             <p>為公司提供方案，解決問題，愛才惜才的您不能錯過。</p>
-            <!-- <button class="start">瞭解更多</button> -->
-            <!-- <button class="start2">瞭解更多</button> -->
+            <!-- <div><button>往下滑看更多</button></div> -->
+        
         </section>
 
         <section class="second">
-            <h1>核心能力</h1>
+            <h1 class="animate__animated animate__bounce">核心能力</h1>
             <p>總有一個你需要的。</p>
-
+            <script> 
+                $(document).ready(function(){
+                  $("button").click(function(){
+                    $("div").animate({left:'250px'});
+                  });
+                });
+                </script> 
             <section class="cards">
                 <div class="card">
                     <img src="./pictures/technology.jpg" alt="tech">
-                    <h4>基礎電學</h4>
+                    <h4 class="animate__fadeIn">基礎電學</h4>
                     <p>電子電路，數位邏輯，MCU，VHDL，Layout<br>數位電子丙級證照<br>數位電子乙級證照</p>
                     <a href="#">瞭解更多</a>
                 </div>
                 <div class="card">
                     <img src="./pictures/coding.jpg" alt="tech">
-                    <h4>Coding</h4>
+                    <h4 class="aanimate__fadeIn">Coding</h4>
                     <p>C，Python，JavaScript，<br>Node.js<br>Linux伺服器架設</p>
-                    <a class="card2" href="#">瞭解更多</a>
+                    <a href="#">瞭解更多</a>
                 </div>
             </section>
         </section>
 
         <section class="third">
-            <h1>Project</h1>
+            <h1>Projects</h1>
             <section class="cards">
                 <div class="card"> <img src="./pictures/MCU.png" alt="MCU">
-                    <p>MCU操控</p>
+                    <p>MCU控制</p>
                 </div>
                 <div class="card"><IMG src="./pictures/Linux.png"></IMG>
                     <p>伺服器架設</p>
@@ -75,7 +83,7 @@
                     <p>Python網路爬蟲應用</p></IMG>
                 </div>
                 <div class="card"><IMG src="./pictures/DB.jpg">
-                    <p>資料庫SQL,MONGO</p></IMG>
+                    <p>資料庫SQL MONGO</p></IMG>
                 </div>
             </section>
         </section>
@@ -84,15 +92,15 @@
 
         <section class="fourth">
             <h1>About Me</h1>
-            <p class="">龍華科大電機工程畢業<br>泰山職訓IoT班結訓<br>
-                “Pay好談，但不給我Job，只好去開Uber了“&nbsp;</p>
-            <p></p><strong>- 武彥</strong></p>
+            <p class="p1">龍華科大電機工程畢業<br>泰山職訓IoT班結訓<br>
+                <p class="pp">“Pay好談，但不給我Job，只好去開Uber了“</p>
+            <p><strong>- 武彥</strong></p><br>
         </section>
     </main>
 
     <footer>
         <div class="logo">
-            <img src="./pictures/main備用.jpg" alt="logo" />
+            <!-- <img src="./pictures/main備用.jpg" alt="logo" /> -->
             <h1>Contacts</h1>
         </div>
         <!-- <nav>
@@ -106,12 +114,12 @@
         </nav> -->
 
         <section class="links">
-            <a href="#"><img src="./pictures/Icons/facebook.svg" alt="FB"></a>
-            <a href="#"><img src="./pictures/Icons/instagram.svg" alt="IG"></a>
+            <a href="https://www.facebook.com/wuyen.lin"><img src="./pictures/Icons/facebook.svg" alt="FB"></a>
+            <a href="https://www.instagram.com/zerofivem/"><img src="./pictures/Icons/instagram.svg" alt="IG"></a>
             <!-- <a href="#"><img src="./pictures/Icons/twitter.svg" alt="MAIL"></a> -->
-            <a href="#"><img src="./pictures/Icons/youtube.svg" alt="youtube"></a>
+            <a href="https://www.youtube.com/channel/UCVwqJ86lseGQmbJzFF6QyIA/videos"><img src="./pictures/Icons/youtube.svg" alt="youtube"></a>
         </section>
-
+        <p>©05M   All rights reserved</p>
     </footer>
 </body>
 
